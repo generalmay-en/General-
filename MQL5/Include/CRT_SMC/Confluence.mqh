@@ -32,7 +32,7 @@ public:
    CConfluence(string symbol, int sl_buffer) : m_symbol(symbol), m_sl_buffer_pips(sl_buffer) {}
    ~CConfluence() {}
 
-   ConfluenceResult ValidateSetup(MarketStructureInfo structure, CRTSignal signal, CSMCEngine &smc, double range_size)
+   ConfluenceResult ValidateSetup(MarketStructureInfo &structure, CRTSignal &signal, CSMCEngine &smc, double range_size)
    {
       ConfluenceResult result;
       result.trade_valid = false;
