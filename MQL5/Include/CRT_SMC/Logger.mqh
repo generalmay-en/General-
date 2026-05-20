@@ -44,7 +44,7 @@ public:
       }
    }
 
-   void UpdateDashboard(MarketStructureInfo &structure, CRTSignal &signal)
+   void UpdateDashboard(const MarketStructureInfo &structure, const CRTSignal &signal)
    {
       string text = "--- EURUSD CRT+SMC Dashboard ---\n";
       text += "HTF Bias: " + EnumToString(structure.htf_bias) + "\n";

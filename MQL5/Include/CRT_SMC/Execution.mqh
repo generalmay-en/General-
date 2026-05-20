@@ -25,7 +25,7 @@ public:
 
    ~CExecution() {}
 
-   bool ExecuteTrade(ConfluenceResult &setup, double lot_size, ENUM_SIGNAL_DIRECTION dir)
+   bool ExecuteTrade(const ConfluenceResult &setup, double lot_size, ENUM_SIGNAL_DIRECTION dir)
    {
       bool success = false;
       double tp = (setup.tp3 > 0) ? setup.tp3 : setup.tp2;
